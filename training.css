@@ -212,6 +212,7 @@ span {
     background-size: cover;
     transition: right 0.5s;
     transform: translateY(-50%);
+    z-index: 2;
   }
   .Radio001{
     width: 400px;
