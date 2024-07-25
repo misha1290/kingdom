@@ -10,17 +10,6 @@
   <link rel="stylesheet" href="./training.css">
 </head>
 <body class="body">
-  <div class="radio-panel" id="radioPanel">
-    <img src="./img/Radio001.png" alt="" class="Radio001" id="playImage">
-    <img src="/img/Antena.png" alt="" class="Antena" id="moveImage">
-    <div id="container">
-      <img id="draggable" src="/img/Poloski.png" alt="Poloski">
-    </div>
-    <img src="/img/q.png" alt="" class="strelka-q" id="q">
-    <img src="/img/p.png" alt="" class="strelka-p" id="p">
-    <button class="toggle-button" id="toggleButton">Radio</button>
-  </div>
-  <audio controls id="music" src="/img/music0.mp3"></audio>
   <div class="konez">
     <div class="sovetnik">
       <h3>Your Majesty, the people have revolted</h3>
@@ -33,19 +22,19 @@
     </div>
     <div class="container2">
       <div class="serza">
-        <img src="/img/Серце.png" class="serza-img serza-1" alt="">
-        <img src="/img/Серце.png" class="serza-img serza-2" alt="">
-        <img src="/img/Серце.png" class="serza-img serza-3" alt="">
+        <img src="./img/Серце.png" class="serza-img serza-1" alt="">
+        <img src="./img/Серце.png" class="serza-img serza-2" alt="">
+        <img src="./img/Серце.png" class="serza-img serza-3" alt="">
       </div>
       <div class="container3">
         <div class="left-container">
-          <img src="/img/1.png" class="container-img" alt="">
+          <img src="./img/1.png" class="container-img" alt="">
           <h2 class="nazvasilu">Your powers</h2>
           <p>Choice: <span id="userChoice"></span></p>
           <p>Force: <span id="userNumber"></span></p>
         </div>
         <div class="right-container">
-          <img src="/img/1-1.png" class="container-img" alt="">
+          <img src="./img/1-1.png" class="container-img" alt="">
           <h2 class="nazvasilu">Enemy forces</h2>
           <p>Choice: <span id="randomChoice"></span></p>
           <p>Force: <span id="randomNumber"></span></p>
@@ -96,6 +85,17 @@
         <h1 id="myHeading">You went to jail!</h1>
         <button id="returnButton">Return</button>
       </div>
+    <div class="radio-panel" id="radioPanel">
+    <img src="./img/Radio001.png" alt="" class="Radio001" id="playImage">
+    <img src="./img/Antena.png" alt="" class="Antena" id="moveImage">
+    <div id="container">
+      <img id="draggable" src="./img/Poloski.png" alt="Poloski">
+    </div>
+    <img src="./img/q.png" alt="" class="strelka-q" id="q">
+    <img src="./img/p.png" alt="" class="strelka-p" id="p">
+    <button class="toggle-button" id="toggleButton">Radio</button>
+  </div>
+  <audio controls id="music" src="/img/music0.mp3"></audio>
   <script src="./training.js"></script>
 </body>
 </html>
