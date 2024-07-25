@@ -227,6 +227,9 @@ html::-webkit-scrollbar-thumb {
     -ms-user-select: none;
     user-select: none;
 }
+.header__mobile{
+    display: none;
+}
   @media(max-width: 768px){
     .container{
         margin-top: 50px;
