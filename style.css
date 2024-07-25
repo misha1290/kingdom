@@ -163,7 +163,70 @@ html::-webkit-scrollbar-thumb {
   .actions button:hover {
     background-color: #9d1b0f;
   }
-
+.logo{
+    width: 80px;
+    transition: 1.5s;
+    -webkit-tap-highlight-color: transparent;
+}
+.logo:hover{
+    transform: scale(1.06);
+}
+.header{
+    display: flex;
+    background-color: #AE2012;
+    opacity: 0;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Roboto';
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+.header > a{
+    color: white;
+    text-decoration: none;
+    padding: 9px 13px;
+    font-size: 17px;
+    border-radius: 30px;
+    transition: opacity 0.5s ease;
+}
+.header > a:hover{
+    color: #E9D8A6;
+}
+.header:hover > :not(:hover){
+    opacity: 0.4;
+}
+.text__header-mobile{
+    display: none;
+    opacity: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.header__label{
+    opacity: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.header__mobile{
+    display: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.nav{
+    display: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
   @media(max-width: 768px){
     .container{
         margin-top: 50px;
@@ -175,5 +238,111 @@ html::-webkit-scrollbar-thumb {
     }
     .actions button {
         margin-top: 10px;
+    }
+}
+@media(max-width: 808px){
+    .header > a{
+        font-size: 15px;
+    }
+}
+@media(max-width: 768px){
+    .header{
+        display: none;
+    }
+    .text__header-mobile{
+        position: fixed;
+        color: #FFF;
+        display: block;
+        z-index: 10001;
+        top: 10px;
+        left: 3.25%;
+    }
+    .header__label{
+        position: fixed;
+        display: block;
+        width: 44px;
+        height: 50px;
+        cursor: pointer;
+        z-index: 10001;
+        top: 25px;
+        left: 3%;
+    }
+    .mobile-line{
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        height: 3.5px;
+        background-color: #c2fbd7;
+        transition: 0.5s;
+        z-index: 1;
+    }
+    .mobile-line::after {
+        position: absolute;
+        content: '';
+        top: 12px;
+        background-color: #c2fbd7;
+        width: 100%;
+        height: 3.5px;
+    }
+    .mobile-line::before {
+        position: absolute;
+        content: '';
+        bottom: 13px;
+        background-color: #c2fbd7;
+        width: 100%;
+        height: 3px;
+    }
+    .header__mobile[type="checkbox"]:checked ~ .header__label .mobile-line {
+        transform: rotate(-45deg);
+    }
+    .header__mobile[type="checkbox"]:checked ~ .header__label .mobile-line::after {
+        transform: rotate(0deg);
+        top: 0;
+    }
+    .header__mobile[type="checkbox"]:checked ~ .header__label .mobile-line::before {
+        transform: rotate(90deg);
+        top: 0;
+    }
+    .header__mobile[type="checkbox"]:checked ~ .nav{
+        position: fixed;
+        display: flex;
+        opacity: 1;
+        flex-direction: column;
+        width: 100%;
+        height: 120vh;
+        background-color: #9B2226;
+        z-index: 10000;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
+        text-align: center;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        margin: 0 auto;
+        margin-top: 110px;
+    }
+    .nav > .menu > a{
+        padding: 6px;
+        color: #E9D8A6;
+        font-size: 30px;
+    }
+    .nav > .menu > a:hover{
+        color: #FFF;
+    }
+    .logo-menu{
+        position: relative;
+        transform: scale(1);
+        width: 130px;
+        transition: 1.5s;
+        -webkit-tap-highlight-color: transparent;
+        top: -20px;
+    }
+    .logo-menu:hover{
+        transform: scale(1.04);
     }
 }
