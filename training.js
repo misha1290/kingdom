@@ -172,7 +172,7 @@ function toggleMoveImage() {
 }
 
 let currentTrack = 0;
-const tracks = ['/img/music0.mp3', '/img/music1.mp3', '/img/music2.mp3', '/img/music3.mp3', '/img/music4.mp3'];
+const tracks = ['./img/music0.mp3', './img/music1.mp3', './img/music2.mp3', './img/music3.mp3', './img/music4.mp3'];
 
 function getNextTrackIndex(currentIndex, direction) {
     let nextIndex = currentIndex;
