@@ -1,0 +1,303 @@
+.body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    margin: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background-image: url(./img/Революция.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+/*     background-size: contain; */
+    background-repeat: round;
+    background-repeat: no-repeat;
+}
+.konez{
+/*     display: none; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.itog-stroka{
+    position: absolute;
+    left: 38%;
+    display: none;
+    max-width: 400px;
+    background-color: #ecd0a05c;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    margin-right: 1%;
+}
+.sovetnik, .sovetnik1 {
+    max-width: 400px;
+    background-color: #ECD0A0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    margin-right: 1%;
+}
+.sovetnik-img{
+    width: 100%;
+}
+.serza-img{
+    width: 100px;
+    transition: 3s;
+/*     filter: grayscale(100%); */
+}
+.container2 {
+    max-width: 600px;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    background-color: #ECD0A0;
+}
+.container-img{
+    width: 100%;
+}
+.polosozka{
+    padding-top: 20px;
+}
+input[type=range] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 10px;
+    background: #ddd;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .15s ease-in-out;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #8a0b00;
+    cursor: pointer;
+}
+  .input-container {
+    margin-bottom: 20px;
+}
+.input-container label {
+    font-weight: bold;
+}
+input[type="range"] {
+    width: 80%;
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #AE2012;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+button:hover {
+    background-color: #78170e;
+}
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+}
+.container3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+.left-container, .right-container {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.left-container {
+    flex: 1;
+    margin-right: 10px;
+}
+.right-container {
+    flex: 1;
+    margin-left: 10px;
+}
+h2 {
+    font-size: 18px;
+}
+p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+span {
+    font-weight: bold;
+}
+.button-box{
+    background-color: #AE2012;
+    color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 5px 10px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+.button-box:hover{
+    background-color:#78170e;
+}
+.input-box[type="checkbox"]:checked ~ .label-box .button-box{
+    background-color: black;
+    color: white;
+    transform: scaleY(0.9);
+}
+.input-box{
+    display: none;
+}
+.div-box{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+.blok{
+    position: fixed;
+    background-color:rgba(182, 163, 139, 0.493);
+    top: 20px;
+    left: 25px;
+    transition: 1.6s;
+    transform: translateX(-500px);
+    z-index: -1;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.input-box[type="checkbox"]:checked ~ .blok{
+    transform: translateX(0);
+}
+.input-box[type="checkbox"]:checked ~ .label-box .button-box .question_mark {
+    display: none;
+}
+.input-box[type="checkbox"]:checked ~ .label-box .button-box .close {
+    display: inline;
+}
+
+.close {
+    display: none;
+}
+.question_mark {
+    display: inline;
+}
+  
+  .message {
+    margin: 10px 0;
+    padding: 8px 12px;
+    border-radius: 8px;
+  }
+  
+  .message p {
+    margin: 0;
+  }
+  
+  .incoming {
+    background-color: bisque;
+  }
+  .radio-panel {
+    position: fixed;
+    top: 40%;
+    right: -400px;
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    transition: right 0.5s;
+    transform: translateY(-50%);
+  }
+  .Radio001{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+  /*   cursor: pointer; */
+  }
+  .Antena{
+    width: 55px;
+  }
+  .strelka-p{
+    width: 60px;
+    cursor: pointer;
+    position: absolute;
+    top: 290px;
+    right: 175px;
+  }
+  .strelka-q{
+    width: 60px;
+    cursor: pointer;
+    position: absolute;
+    top: 29px;
+    top: 290px;
+    right: 304px;
+  }
+  .radio-panel.visible {
+    right: 0;
+  }
+  .toggle-button {
+    position: absolute;
+    top: 50%;
+    left: -70px;
+    background: #cc0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px 0 0 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    transform: translateY(-50%);
+  }
+  .toggle-button:hover {
+    background: #b50000;
+  }
+  #music{
+    transform: scale(0);
+  }
+  #moveImage {
+    position: relative;
+    transition: 0.8s;
+    margin: 100px 30px;
+    z-index: -1;
+    top: 0;
+  }
+  #container {
+    width: 195px;
+    height: 95px;
+    margin: 50px auto;
+    position: absolute;
+    top: 122px;
+    right: 170px;
+  }
+  #draggable {
+    width: 27,8px;
+    height: 100px;
+    position: absolute;
+    cursor: grab;
+  }
+  
+  @media screen and (max-width: 400px) {
+    .radio-panel{
+      display: none;
+    }
+  }
+  @media(max-width: 768px){
+    body{
+        overflow-x:hidden;
+    }
+    .nazvasilu{
+        width: 100px;
+        margin: 0 auto;
+    }
+    .sovetnik{
+        display: none;
+    }
+    .div-box{
+        display: block;
+    }
+}

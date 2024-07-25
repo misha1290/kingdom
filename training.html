@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Crown_of_Kingdom_of_Italy.png/1200px-Crown_of_Kingdom_of_Italy.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <title>Kingdom</title>
+  <link rel="stylesheet" href="./training.css">
+</head>
+<body class="body">
+  <div class="radio-panel" id="radioPanel">
+    <img src="./img/Radio001.png" alt="" class="Radio001" id="playImage">
+    <img src="/img/Antena.png" alt="" class="Antena" id="moveImage">
+    <div id="container">
+      <img id="draggable" src="/img/Poloski.png" alt="Poloski">
+    </div>
+    <img src="/img/q.png" alt="" class="strelka-q" id="q">
+    <img src="/img/p.png" alt="" class="strelka-p" id="p">
+    <button class="toggle-button" id="toggleButton">Radio</button>
+  </div>
+  <audio controls id="music" src="/img/music0.mp3"></audio>
+  <div class="konez">
+    <div class="sovetnik">
+      <h3>Your Majesty, the people have revolted</h3>
+      <h3>It is up to you to defend your power</h3>
+      <h3>First, choose how many</h3>
+      <h3>soldiers you want to send to 1/3 of the battles</h3>
+      <h3>Further select which tactics you want</h3>
+      <h3>use and click “To fight”</h3>
+        <img src="./img/Советник.png" alt="Советник" class="sovetnik-img">
+    </div>
+    <div class="container2">
+      <div class="serza">
+        <img src="/img/Серце.png" class="serza-img serza-1" alt="">
+        <img src="/img/Серце.png" class="serza-img serza-2" alt="">
+        <img src="/img/Серце.png" class="serza-img serza-3" alt="">
+      </div>
+      <div class="container3">
+        <div class="left-container">
+          <img src="/img/1.png" class="container-img" alt="">
+          <h2 class="nazvasilu">Your powers</h2>
+          <p>Choice: <span id="userChoice"></span></p>
+          <p>Force: <span id="userNumber"></span></p>
+        </div>
+        <div class="right-container">
+          <img src="/img/1-1.png" class="container-img" alt="">
+          <h2 class="nazvasilu">Enemy forces</h2>
+          <p>Choice: <span id="randomChoice"></span></p>
+          <p>Force: <span id="randomNumber"></span></p>
+        </div>
+      </div>
+        <div class="input-container polosozka">
+          <label for="number">Troop:</label>
+          <input type="range" id="number" name="number" min="1" max="100" value="50">
+          <span id="numberValue">50</span>
+        </div>
+        <div class="input-container">
+          <label for="choice">Tactic:</label>
+          <select id="choice" name="choice">
+            <option value="D">Dexterity</option>
+            <option value="W">Wisdom</option>
+            <option value="F">Force</option>
+          </select>
+        </div>
+        <button id="myButton" onclick="calculateResult()">To fight</button>
+        <div id="result"></div>
+      </div>
+      <div class="div-box">
+        <input class="input-box" type="checkbox" id="hello">
+        <label class="label-box" for="hello">
+            <div class="button-box">
+                <span class="material-symbols-outlined">
+                    <span class="question_mark">question_mark</span>
+                    <span class="close">close</span>
+                </span>
+            </div>
+        </label>
+        <div class="blok">
+            <div class="chat">
+              <div class="sovetnik1">
+                <h3>Your Majesty, the people have revolted</h3>
+                <h3>It is up to you to defend your power</h3>
+                <h3>First, choose how many</h3>
+                <h3>soldiers you want to send to 1/3 of the battles</h3>
+                <h3>Further select which tactics you want</h3>
+                <h3>use and click “To fight”</h3>
+                <img src="./img/Советник.png" alt="Советник" class="sovetnik-img">
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+      <div class="itog-stroka">
+        <h1 id="myHeading">You went to jail!</h1>
+        <button id="returnButton">Return</button>
+      </div>
+  <script src="./training.js"></script>
+</body>
+</html>

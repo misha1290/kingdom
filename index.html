@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Crown_of_Kingdom_of_Italy.png/1200px-Crown_of_Kingdom_of_Italy.png" type="image/x-icon">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+  <title>Kingdom</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>                                                                                                                                     
+    <header data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1350" class="header">
+        <a href="./index.html" class="Home">Home</a>
+        <a href="" class="About Us">About Us</a>
+        <a href="./HTML/Danylo.html" class="Page Danylo">Danylo's Game</a>
+        <a href="" class="Page Ilya">Ilya's Game</a>
+        <a href="" class="Page Misha">Misha's Game</a>
+        <a href="" class="Page Vlad">Vlad's Game</a>
+    </header>
+
+    <nav data-aos="fade-right"
+    data-aos-easing="linear"
+    data-aos-duration="900"
+    data-aos-delay="200" class="menu">
+        <ul>
+            <li>
+                <a href="./index.html">
+                    <i class="fa fa-home"></i>
+                    <span class="nav-text">Home</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa fa-phone"></i>
+                    <span class="nav-text">About us</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="./HTML/Danylo.html">
+                    <i class="fa fa-user"></i>
+                    <span class="nav-text">Danylo's Game</span>
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="#">
+                    <i class="fa fa-user"></i>
+                    <span class="nav-text">Ilya's Game</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa fa-user"></i>
+                    <span class="nav-text">Misha's Game</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa fa-user"></i>
+                    <span class="nav-text">Vlad's Game</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+  <div class="container">
+    <h1>Welcome to your kingdom!</h1>
+    <img src="/img/1.png" alt="Картинка королевства">
+    <p>You were born royalty in the great empire of Druruth. But times have changed, and the lands you have inherited are in decline. Can you revive your empire and lead it to a new prosperity?</p>
+    <p>While you're still a child, it's time to make your first important choice. What would you like to do?</p>
+    <div class="actions">
+      <button onclick="makeChoice('D')"><p class="actionsb">Playing tag</p></button>
+      <button onclick="makeChoice('W')"><p class="actionsb">Read books</p></button>
+      <button onclick="makeChoice('F')"><p class="actionsb">Sword fighting</p></button>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
